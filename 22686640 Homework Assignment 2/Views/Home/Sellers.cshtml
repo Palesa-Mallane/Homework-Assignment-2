@@ -1,0 +1,86 @@
+﻿@model List<_22686640_Homework_Assignment_2.Models.SellerViewModel>
+@{
+    ViewBag.Title = "Sellers";
+}
+
+<main style="padding: 20px;">
+    <div class="container">
+        <h2 style="text-align: center; color: #008080;">Sellers List</h2>
+
+        <form method="get" action="@Url.Action("Sellers", "Home")">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <label style="color: #008080;">Filter by Store Location:</label>
+                    <select name="StoreLocation" class="form-control" style="border: 1px solid #008080; border-radius: 15px;">
+                        <option value="">All Locations</option>
+                        @foreach (var location in (IEnumerable<SelectListItem>)ViewBag.Stores)
+                        {
+                            <option value="@location.Value">@location.Text</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label style="color: #008080;">Filter by Order Date:</label>
+                    <input type="date" name="OrderDate" class="form-control" style="border: 1px solid #008080; border-radius: 15px;"/>
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-block" style="background-color: #008080; color: white; border: none; border-radius: 15px; margin-top: 24px;">Filter</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered" style="border: 2px solid #008080; border-radius: 15px; overflow: hidden;">
+                    <thead>
+                        <tr>
+                            <th style="color: #ff69b4;">Profile Photo</th>
+                            <th style="color: #ff69b4;">Seller Name</th>
+                            <th style="color: #ff69b4;">Email</th>
+                            <th style="color: #ff69b4;">Phone</th>
+                            <th style="color: #ff69b4;">Location</th>
+                            <th style="color: #ff69b4;">Products Listed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var seller in Model)
+                        {
+                            <tr> 
+                                <td>
+                                    @if (!string.IsNullOrEmpty(seller.ProfilePhoto))
+                                    {
+                                        <img src="@seller.ProfilePhoto" alt="@seller.SellerName" style="width: 80px; height: 80px;" />
+                                    }
+                                    else
+                                    {
+                                        <span>No profile image uploaded</span>
+                                    }
+                                </td>
+                                <td>@seller.SellerName</td>
+                                <td>@seller.Email</td>
+                                <td>@seller.Phone</td>
+                                <td>@seller.Location</td>                               
+                                                                
+                                <td>
+                                    @if (seller.ProductsListed != null && seller.ProductsListed.Any())
+                                    {
+                                        <ul>
+                                            @foreach (var product in seller.ProductsListed)
+                                            {
+                                                <li>@product.ProductName</li>
+                                             }
+                                        </ul>
+                                    }
+                                    else
+                                    {
+                                        <span>No Products Listed</span>
+                                    }
+                                </td>
+                            </tr>
+                         }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>

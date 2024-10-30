@@ -1,0 +1,75 @@
+﻿@model _22686640_Homework_Assignment_2.Models.DashboardViewModel
+@{
+    ViewBag.Title = "DashBoard";
+}
+
+<h2 style="text-align: center; color: #ff69b4;">My Bicycles</h2>
+
+<main>
+    <h3>Products you've bought</h3>
+    <table class="table table-bordered" style="border: 1px solid #6ed2c1; border-radius: 10px; overflow: hidden;">
+        <thead style="background-color: #e0f7f4; border-color: #6ed2c1;">
+            <tr>
+                <th style="border-radius: 10px 10px 0 0;">Product Name</th>              
+                <th style="border-radius: 10px 10px 0 0;"></th> 
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.BoughtProducts != null && Model.BoughtProducts.Any())
+            {
+                foreach (var product in Model.BoughtProducts)
+                {
+                    <tr style="border-color: #6ed2c1;" onmouseover="this.style.backgroundColor='#f0f0f0';" onmouseout="this.style.backgroundColor='';">
+                        <td style="border-color: #6ed2c1;">@product.ProductName</td>
+                        <td style="border-color: #6ed2c1;">
+                            <a href="@Url.Action("ProductDetails", "Home", new { productId = product.ProductId })"
+                               class="btn btn-primary"
+                               style="background-color: #f8c1cc; border-color: #f8c1cc; color: white; border-radius: 10px;">
+                                View Product Details
+                            </a>
+                        </td>
+                    </tr>
+                }
+             }
+                else
+                {
+                    <tr>
+                        <td colspan="2" style="border-color: #6ed2c1; text-align: center;">
+                            You haven't purchased any products
+                        </td>
+                    </tr>
+                }
+            
+
+            </tbody>
+    </table>
+
+    <h3>Products you've sold</h3>
+    <table class="table table-bordered" style="border: 1px solid #6ed2c1; border-radius: 10px; overflow: hidden;">
+        <thead style="background-color: #e0f7f4; border-color: #6ed2c1;">
+            <tr>
+                <th style="border-radius: 10px 10px 0 0;">Product Name</th>
+                <th style="border-radius: 10px 10px 0 0;"></th> <!-- Column for button -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.SoldProducts)
+            {
+                <tr style="border-color: #6ed2c1;" onmouseover="this.style.backgroundColor='#f0f0f0';" onmouseout="this.style.backgroundColor='';">
+                    <td style="border-color: #6ed2c1;">@product.ProductName</td>
+                    <td style="border-color: #6ed2c1;">
+                        <a href="@Url.Action("ProductDetails", "Home", new { productId = product.ProductId })"
+                           class="btn btn-primary"
+                           style="background-color: #f8c1cc; border-color: #f8c1cc; color: white; border-radius: 10px;">
+                            View Product Details
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>
+
+<div style="margin-top: 20px;">
+    <a href="@Url.Action("Index", "Home")" class="btn btn-secondary" style="background-color: #6ed2c1; color: white; border-radius: 10px;">Back to Home</a>
+</div>

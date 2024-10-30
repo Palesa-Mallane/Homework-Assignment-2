@@ -1,0 +1,472 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\submitorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\submitorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|c:\\users\\palesa\\documents\\2024\\inf272\\22686640 homework assignment 2\\22686640 homework assignment 2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\price.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\price.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\productdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\productdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\orderproductdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\orderproductdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\sell.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\sell.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\brandbikes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\brandbikes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\viewsimilarbikes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\viewsimilarbikes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\stores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\stores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\updateproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\updateproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\buy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\buy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\models\\cartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\models\\cartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\searchproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\searchproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\searchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\searchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\productsbylocation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\productsbylocation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\models\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\models\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\models\\customerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\models\\customerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\buyers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\buyers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\views\\home\\sellers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\views\\home\\sellers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\models\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\models\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 homework assignment 2\\models\\sellerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217D11F2-FFBC-45C3-9CB9-A3721833C42F}|22686640 Homework Assignment 2\\22686640 Homework Assignment 2.csproj|solutionrelative:22686640 homework assignment 2\\models\\sellerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SubmitOrder.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\SubmitOrder.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\SubmitOrder.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\SubmitOrder.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\SubmitOrder.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAACfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T20:44:25.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DashBoard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\DashBoard.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\DashBoard.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\DashBoard.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\DashBoard.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T19:22:38.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Price.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Price.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\Price.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Price.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\Price.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADYAAACbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T22:48:56.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Sell.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Sell.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\Sell.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Sell.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\Sell.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAAB4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T17:35:12.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAIgHAAAAAAAAAAAmwF8HAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T16:01:15.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ViewSimilarBikes.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\ViewSimilarBikes.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\ViewSimilarBikes.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\ViewSimilarBikes.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\ViewSimilarBikes.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T14:00:37.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\ProductDetails.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\ProductDetails.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\ProductDetails.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\ProductDetails.cshtml",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAADAAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T17:57:01.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BrandBikes.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\BrandBikes.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\BrandBikes.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\BrandBikes.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\BrandBikes.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAgwBkAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T15:15:05.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Order.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Order.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\Order.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Order.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\Order.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T15:21:23.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Models\\ProductViewModel.cs",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\ProductViewModel.cs",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Models\\ProductViewModel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA3wBcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T15:30:54.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderProductDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\OrderProductDetails.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\OrderProductDetails.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\OrderProductDetails.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\OrderProductDetails.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T15:15:53.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Stores.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Stores.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\Stores.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Stores.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\Stores.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T17:38:50.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAABEAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T23:35:24.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T22:33:09.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UpdateProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\UpdateProduct.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\UpdateProduct.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\UpdateProduct.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\UpdateProduct.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T22:03:12.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Buy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Buy.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\Buy.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Buy.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\Buy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T14:35:10.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\Product.cs",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T12:45:11.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CartViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\CartViewModel.cs",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Models\\CartViewModel.cs",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\CartViewModel.cs",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Models\\CartViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T16:23:10.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SearchResults.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\SearchResults.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\SearchResults.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\SearchResults.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\SearchResults.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T22:48:30.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SearchProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\SearchProduct.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\SearchProduct.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\SearchProduct.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\SearchProduct.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T08:47:02.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CustomerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\CustomerViewModel.cs",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Models\\CustomerViewModel.cs",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\CustomerViewModel.cs",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Models\\CustomerViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T18:15:34.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OrderViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\OrderViewModel.cs",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Models\\OrderViewModel.cs",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\OrderViewModel.cs",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Models\\OrderViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T12:05:31.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProductsByLocation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\ProductsByLocation.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\ProductsByLocation.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\ProductsByLocation.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\ProductsByLocation.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T10:21:08.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Buyers.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Buyers.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\Buyers.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Buyers.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\Buyers.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCIAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T10:47:54.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Sellers.cshtml",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Sellers.cshtml",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Views\\Home\\Sellers.cshtml",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Views\\Home\\Sellers.cshtml",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Views\\Home\\Sellers.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T18:08:34.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Seller.cs",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\Seller.cs",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Models\\Seller.cs",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\Seller.cs",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Models\\Seller.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T17:15:56.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\Customer.cs",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Models\\Customer.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T13:09:22.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SellerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\SellerViewModel.cs",
+              "RelativeDocumentMoniker": "22686640 Homework Assignment 2\\Models\\SellerViewModel.cs",
+              "ToolTip": "C:\\Users\\Palesa\\Documents\\2024\\INF272\\22686640 Homework Assignment 2\\22686640 Homework Assignment 2\\Models\\SellerViewModel.cs",
+              "RelativeToolTip": "22686640 Homework Assignment 2\\Models\\SellerViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T13:32:12.595Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

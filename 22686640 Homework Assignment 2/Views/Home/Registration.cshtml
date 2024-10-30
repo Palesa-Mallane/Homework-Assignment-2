@@ -1,0 +1,86 @@
+﻿@model _22686640_Homework_Assignment_2.Models.User
+
+@{
+   ViewBag.Title = "Register";
+}
+
+
+<main>
+    <div style="width: 60%; margin: auto; display: flex; flex-direction: column; align-items: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 2px solid #4db6ac; padding: 20px; border-radius: 10px; background-color: #f9f9f9;">
+
+        <h2 style="color: #008080; margin-bottom: 10px;">Seller Registration</h2>
+        <a href="@Url.Action("Login", "Home")" style="text-decoration: underline; color: #ff69b4; margin-bottom: 20px;">Already have an account? Log In</a>
+
+        @using (Html.BeginForm("RegisterUser", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%; margin: 10px 0;">
+                <div style="flex: 1; margin: 0 10px;">
+                    @Html.LabelFor(m => m.FirstName, new { @style = "font-weight: bold; color: #555;" })
+                    @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", @style = "width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ff69b4;" })
+                </div>
+                <div style="flex: 1; margin: 0 10px;">
+                    @Html.LabelFor(m => m.LastName, new { @style = "font-weight: bold; color: #555;" })
+                    @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", @style = "width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ff69b4;" })
+                </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%; margin: 10px 0;">
+                <div style="flex: 1; margin: 0 10px;">
+                    @Html.LabelFor(m => m.Email, new { @style = "font-weight: bold; color: #555;" })
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @style = "width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ff69b4;" })
+                </div>
+                <div style="flex: 1; margin: 0 10px;">
+                    @Html.LabelFor(m => m.Phone, new { @style = "font-weight: bold; color: #555;" })
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", @style = "width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ff69b4;" })
+                </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%; margin: 10px 0;">
+                <div style="flex: 1; margin: 0 10px;">
+                    @Html.LabelFor(m => m.Street, new { @style = "font-weight: bold; color: #555;" })
+                    @Html.TextBoxFor(m => m.Street, new { @class = "form-control", @style = "width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ff69b4;" })
+                </div>
+                <div style="flex: 1; margin: 0 10px;">
+                    @Html.LabelFor(m => m.City, new { @style = "font-weight: bold; color: #555;" })
+                    @Html.TextBoxFor(m => m.City, new { @class = "form-control", @style = "width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ff69b4;" })
+                </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%; margin: 10px 0;">
+                <div style="flex: 1; margin: 0 10px;">
+                    @Html.LabelFor(m => m.State, new { @style = "font-weight: bold; color: #555;" })
+                    @Html.TextBoxFor(m => m.State, new { @class = "form-control", @style = "width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ff69b4;" })
+                </div>
+                <div style="flex: 1; margin: 0 10px;">
+                    @Html.LabelFor(m => m.ZipCode, new { @style = "font-weight: bold; color: #555;" })
+                    @Html.TextBoxFor(m => m.ZipCode, new { @class = "form-control", @style = "width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ff69b4;" })
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: center; margin-top: 20px; width: 100%;">
+                <div style="margin-right: 20px;">
+                    <label style="font-weight: bold; color: #555;">
+                        @Html.CheckBoxFor(m => m.IsSeller, new { @class = "form-check-input", @style = "transform: scale(1.5); margin-right: 5px;" }) Seller
+                    </label>
+                </div>
+                <div>
+                    <label style="font-weight: bold; color: #555;">
+                        @Html.CheckBoxFor(m => m.IsBuyer, new { @class = "form-check-input", @style = "transform: scale(1.5); margin-right: 5px;" }) Buyer
+                    </label>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%; margin: 10px 0;">
+
+                <div style="flex: 1; margin: 0 10px;">
+                    @Html.LabelFor(m => m.ProfilePhoto, new { @style = "font-weight: bold; color: #555;" })
+                    @Html.TextBoxFor(m => m.ProfilePhoto, new { type = "file", @class = "form-control", @style = "width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ff69b4;" })
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <input type="submit" value="Register" style="background-color: #008080; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" />
+            </div>
+        }
+    </div>
+</main>

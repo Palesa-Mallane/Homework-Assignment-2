@@ -1,0 +1,30 @@
+﻿@model _22686640_Homework_Assignment_2.Models.User
+@{
+    ViewBag.Title = "Login";
+}
+
+<main>
+    <div style="width: 60%; margin: auto; display: flex; flex-direction: column; align-items: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 2px solid #4db6ac; padding: 20px; border-radius: 10px; background-color: #f9f9f9;">
+
+        <h2 style="color: #008080; margin-bottom: 10px;">User Login</h2>
+        <a href="@Url.Action("RegisterUser", "Home")" style="text-decoration: underline; color: #ff69b4; margin-bottom: 20px;">Don't have an account? Register here</a>
+
+        @using (Html.BeginForm("DoLogin", "Home", FormMethod.Post))
+         {
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%; margin: 10px 0;">
+                <div style="flex: 1; margin: 0 10px;">
+                    @Html.LabelFor(m => m.Email, new { @style = "font-weight: bold; color: #555;" })
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @style = "width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ff69b4;" })
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <input type="submit" value="Login" style="background-color: #008080; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" />
+            </div>
+         }
+    </div>
+</main>
+
+
+
+

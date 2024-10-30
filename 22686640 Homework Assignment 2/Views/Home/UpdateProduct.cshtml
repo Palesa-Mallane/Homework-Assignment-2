@@ -1,0 +1,41 @@
+﻿@model _22686640_Homework_Assignment_2.Models.ProductViewModel
+@{
+    ViewBag.Title = "UpdateProduct";
+}
+
+<h2>Update Product</h2>
+
+@using (Html.BeginForm("UpdateProduct", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.Hidden("productId", Model.ProductId)
+
+    <div>
+        <label>Product Name:</label>
+        <input type="text" name="ProductName" value="@Model.ProductName" required />
+    </div>
+    <label for="Brands">Brands</label>
+    @Html.DropDownList("brandId", (SelectList)ViewBag.Brands, "Select Brand", new { @class = "form-control" })
+
+    <div class="col-md-4">
+        <label for="Categories">Categories</label>
+        @Html.DropDownList("categoryId", (SelectList)ViewBag.Categories, "Select Category", new { @class = "form-control" })
+    </div>
+    <div class="col-md-4">
+        <label for="Locations">Locations</label>
+        @Html.DropDownList("storeId", (SelectList)ViewBag.Locations, "Select Store+", new { @class = "form-control" })
+    </div>
+
+    <label>Model Year:</label>
+    <input type="text" name="ModelYear" value="@Model.ModelYear" required />
+
+    <div>
+        <label>List Price:</label>
+        <input type="number" name="ListPrice" value="@Model.ListPrice" required />
+    </div>
+    <div>
+        <label>Upload Image:</label>
+        <input type="file" name="ImageURL" accept="image/*" />
+    </div>
+    <button type="submit">Update Bike</button>
+}
+

@@ -1,0 +1,79 @@
+﻿@model IEnumerable<_22686640_Homework_Assignment_2.Models.CustomerViewModel>
+
+@{
+    ViewBag.Title = "Buyers";
+}
+<main style="padding: 20px;">
+    <div class="container">
+        <h2 style="text-align: center; color: #008080;">Buyers List</h2>
+
+        <form method="get" action="@Url.Action("Buyers","Home")">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <label for="storeLocation" style="color: #008080;">Filter by Store Location:</label>
+                    <select id="storeLocation" name="StoreLocation"class="form-control" style="border: 1px solid #008080; border-radius: 15px;">
+                        <option value="">All Locations</option>                    
+                        @foreach (var location in (IEnumerable<SelectListItem>)ViewBag.Stores)
+                        {
+                            <option value="@location.Value">@location.Text</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="orderDate" style="color: #008080;">Filter by Order Date:</label>
+                    <input type="date" id="orderDate" name="OrderDate"class="form-control" style="border: 1px solid #008080; border-radius: 15px;" />
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-block" style="background-color: #008080; color: white; border: none; border-radius: 15px; margin-top: 24px;" onclick="filterBuyers()">Filter</button>
+                </div>
+            </div>
+        </form>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered" style="border: 2px solid #008080; border-radius: 15px; overflow: hidden;">
+                    <thead style="background-color: #e0f2f1;">
+                        <tr>
+                            <th style="color: #ff69b4;">Profile Image</th>
+                            <th style="color: #ff69b4;">Customer Name</th>
+                            <th style="color: #ff69b4;">Store Location</th>
+                            <th style="color: #ff69b4;">Order Date</th>
+                            <th style="color: #ff69b4;">Staff Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var customer in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(customer.ProfileImage))
+                                    {
+                                        <img src="@customer.ProfileImage" alt="@customer.CustomerName" style="width: 80px; height: 80px;" />
+                                    }
+                                    else
+                                    {
+                                        <span>No profile image uploaded</span>
+                                    }
+                                </td>
+                                <td>@customer.CustomerName</td>
+                                <td>@customer.StoreLocation</td>
+                                <td>@customer.OrderDate.ToString("yyyy/MM/dd")</td>
+                                <td>@customer.StaffName</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <a href="@Url.Action("Index", "Home")" class="btn btn-secondary" style="border-radius: 15px; background-color: #008080; color: white;">Back to Home</a>
+</div>
+
+
+
+
+
+

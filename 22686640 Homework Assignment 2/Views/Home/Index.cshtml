@@ -1,0 +1,97 @@
+﻿<main>
+    <div class="container text-center mt-4">
+        <div class="row" style="border: 2px solid #008080; background-color: #008080; opacity:60% ;border-radius: 10px; color: white; ">
+            <div class="col-md-2 mb-3">
+                <a href="@Url.Action("Buyers", "Home")" class="btn btn-block" style=" color: white; border-radius: 10px;">Buyers</a>
+            </div>
+            <div class="col-md-2 mb-3">
+                <a href="@Url.Action("Sellers", "Home")" class="btn btn-block" style=" color: white; border-radius: 10px;">Sellers</a>
+            </div>
+            <div class="col-md-2 mb-3">
+                <a href="@Url.Action("StoreBikes", "Home")" class="btn btn-block" style="color: white; border-radius: 10px;">Bikes</a>
+            </div>
+            <div class="col-md-2 mb-3">
+                <a href="@Url.Action("Stores", "Home")" class="btn btn-block" style="color: white; border-radius: 10px;">Stores</a>
+            </div>
+            <div class="col-md-2 mb-3">
+                <a href="@Url.Action("Price", "Home")" class="btn btn-block" style="color: white; border-radius: 10px;">Price</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Summaries Section -->
+                <div style="border: 2px solid #ff69b4; padding-left: 2px; border-radius: 10px;">
+                    <b style="color: #ff69b4;">Summaries</b>
+                    <div style="padding: 15px; padding-bottom: 50px; margin-bottom: 10px; text-align:left;">
+                        @Html.ActionLink("New Stocks", "NewStocks", "Home", null, new { @class = "btn btn-block", style = "display:block; border-radius: 10px; margin-bottom: 10px;" })
+                        @Html.ActionLink("Listed for Sale", "ListedForSale", "Home", null, new { @class = "btn btn-block", style = "display:block; border-radius: 10px; margin-bottom: 10px;" })
+                        @Html.ActionLink("Total Sold", "TotalSold", "Home", null, new { @class = "btn btn-block", style = "display:block; border-radius: 10px; margin-bottom: 10px;" })
+                        @Html.ActionLink("Sales per Brand", "SalesPerBrand", "Home", null, new { @class = "btn btn-block", style = "display:block; border-radius: 10px; margin-bottom: 10px;" })
+                        @Html.ActionLink("Listings per Brand", "ListingsPerBrand", "Home", null, new { @class = "btn btn-block", style = "display:block; border-radius: 10px; margin-bottom: 10px;" })
+                        @Html.ActionLink("Average Sales per Brand", "AvgSalesPerBrand", "Home", null, new { @class = "btn btn-block", style = "display:block; border-radius: 10px; margin-bottom: 10px;" })
+                        @Html.ActionLink("Totals per Brand Category", "TotalsPerBrandCategory", "Home", null, new { @class = "btn btn-block", style = "display:block; border-radius: 10px; margin-bottom: 10px;" })
+                        @Html.ActionLink("Totals per Store", "TotalsPerStore", "Home", null, new { @class = "btn btn-block", style = "display:block; border-radius: 10px; margin-bottom: 10px;" })
+                    </div>
+                </div>
+
+                <!-- Display Message Box -->
+                @if (TempData["Message"] != null)
+                 {
+                    <div class="alert alert-info" style="border: 2px solid #ff69b4; border-radius: 10px; margin:10px">
+                        <strong style="color: #ff69b4;">@TempData["MessageTitle"]</strong>
+                        <p>@Html.Raw(TempData["Message"])</p> <!-- Use Html.Raw to render HTML -->
+                    </div>
+                 }
+            </div>
+
+            <!-- Bike Image -->
+            <div class="col-md-6 text-center">
+                <div>
+                    <img src="~/Bike_Images/BicycleShop.jpg" class="img-fluid" alt="Bike Image" />
+                </div>
+                <div style="border: 2px solid #ff69b4; margin-top: 10px; border-radius: 10px;">
+                    <p style="text-align: center; font-size: 18px; margin-top: 20px;">
+                        We help your dreams come true! <br />
+                        We help you sell, and help you buy! <br />
+                        We connect you to the global bicycle market!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3" style="text-align: right; padding: 5px;">
+                <div style="border: 2px solid #ff69b4; border-radius: 10px;">
+                    <b style="color: #ff69b4;">Bike Brands</b>
+                    <ul class="list-unstyled">
+                        <li><a href="@Url.Action("BrandBikes", "Home", new { BrandId = 1 })" class="btn btn-block" style="border-radius: 10px;">Electra</a></li>
+                        <li><a href="@Url.Action("BrandBikes", "Home", new { BrandId = 2 })" class="btn btn-block" style="border-radius: 10px;">Haro</a></li>
+                        <li><a href="@Url.Action("BrandBikes", "Home", new { BrandId = 3 })" class="btn btn-block" style="border-radius: 10px;">Heller</a></li>
+                        <li><a href="@Url.Action("BrandBikes", "Home", new { BrandId = 4 })" class="btn btn-block" style="border-radius: 10px;">Trek</a></li>
+                        <li><a href="@Url.Action("BrandBikes", "Home", new { BrandId = 5 })" class="btn btn-block" style="border-radius: 10px;">Pure Cycles</a></li>
+                        <li><a href="@Url.Action("BrandBikes", "Home", new { BrandId = 6 })" class="btn btn-block" style="border-radius: 10px;">Ritchey</a></li>
+                        <li><a href="@Url.Action("BrandBikes", "Home", new { BrandId = 7 })" class="btn btn-block" style="border-radius: 10px;">Sun Bicycles</a></li>
+                        <li><a href="@Url.Action("BrandBikes", "Home", new { BrandId = 8 })" class="btn btn-block" style="border-radius: 10px;">Surly</a></li>
+                        <li><a href="@Url.Action("BrandBikes", "Home", new { BrandId = 9 })" class="btn btn-block" style="border-radius: 10px;">Strider</a></li>
+                    </ul>
+                </div>
+
+                <div style="border: 2px solid #ff69b4; text-align: right; padding-top: 5px; margin-top: 10px; border-radius: 10px;">
+                    <b style="color: #ff69b4;">Our Shops Globally</b>
+                    <ul class="list-unstyled">
+                        <li><a href="@Url.Action("ProductsByLocation", "Home", new { CountryId = 1 })" class="btn btn-block" style="border-radius: 10px;">United States</a></li>
+                        <li><a href="@Url.Action("ProductsByLocation", "Home", new { CountryId = 2 })" class="btn btn-block" style="border-radius: 10px;">United Kingdom</a></li>
+                        <li><a href="@Url.Action("ProductsByLocation", "Home", new { CountryId = 3 })" class="btn btn-block" style="border-radius: 10px;">South Africa</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+

@@ -1,0 +1,37 @@
+﻿@model List<_22686640_Homework_Assignment_2.Models.ProductViewModel>
+@{
+    ViewBag.Title = "Stores";
+}
+
+<div style="background-color: #ff69b4; padding: 10px; color: white; text-align: center; border-radius: 10px;">
+    <h3>View All Available Products</h3>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; padding: 20px;">
+    @if (Model != null && Model.Any())
+    {
+        foreach (var product in Model)
+        {
+            <div style="border: 1px solid #ddd; border-radius: 5px; padding: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <img src="@product.ImageURL" alt="@product.ProductName" style="width: 100%; height: auto; border-radius: 5px;" />
+                <h5>@product.ProductName</h5>
+                <a href="@Url.Action("ProductDetails", "Home", new { productId = product.ProductId })"
+                   class="btn btn-info"
+                   style="border-radius: 15px; background-color: #008080; color: white; font-size: 14px; padding: 5px 10px;">
+                    View Product Details
+                </a>
+            </div>
+        }
+    }
+    else
+    {
+        <div style="text-align: center; font-size: 1.5em; color: #777;">No products found</div>
+    }
+</div>
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <a href="@Url.Action("Index", "Home")" class="btn btn-secondary" style="border-radius: 15px; background-color: #008080; color: white;">Back to Home</a>
+</div>
+
+
+
+

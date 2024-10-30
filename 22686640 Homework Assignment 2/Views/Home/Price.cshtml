@@ -1,0 +1,56 @@
+﻿@model IEnumerable<_22686640_Homework_Assignment_2.Models.ProductViewModel>
+@{
+    ViewBag.Title = "PriceRange";
+}
+
+<h2>Price</h2>
+
+<main style="background-color: #fafafa; padding: 20px;">
+    <div class="container">
+        <h2 style="text-align: center; color: #ff69b4;">Bicycles within Your Price Range</h2>
+        @using (Html.BeginForm("Price", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <label for="minPrice" style="color: #008080;">Minimum Price:</label>
+                    <input type="number" name="minPrice" step="0.01" class="form-control" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ff69b4;" />
+                </div>
+                <div class="col-md-4">
+                    <label for="maxPrice" style="color: #008080;">Maximum Price:</label>
+                    <input type="number" name="maxPrice" step="0.01" class="form-control" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ff69b4;" />
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-block" style="background-color: #ff69b4; color: white; border: none; border-radius: 15px; margin-top: 24px;">Filter</button>
+                </div>
+            </div>
+        }
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; padding: 20px;">
+            @if (Model != null && Model.Any())
+            {
+                foreach (var product in Model)
+                {
+                    <div style="border: 1px solid #ddd; border-radius: 5px; padding: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                        <img src="@product.ImageURL" alt="@product.ProductName" style="width: 100%; height: auto; border-radius: 5px;" />
+                        <h5>@product.ProductName</h5>
+                        <a href="@Url.Action("ProductDetails", "Home", new { productId = product.ProductId })"
+                           class="btn btn-info"
+                           style="border-radius: 15px; background-color: #008080; color: white; font-size: 14px; padding: 5px 10px;">
+                            View Product Details
+                        </a>
+
+                    </div>
+                }
+            }
+            else
+            {
+                <div style="text-align: center; font-size: 1.5em; color: #777;">No products found</div>
+            }
+        </div>
+
+    </div>
+</main>
+
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <a href="@Url.Action("Index", "Home")" class="btn btn-secondary" style="border-radius: 15px; background-color: #008080; color: white;">Back to Home</a>
+</div>

@@ -1,0 +1,44 @@
+﻿@model List<_22686640_Homework_Assignment_2.Models.ProductViewModel>
+
+@{
+    ViewBag.Title = "BrandBikes";
+}
+
+<h2 style="text-align: center; color: #ff69b4; font-size: 24px;">Bicycles from @ViewBag.BrandName</h2>
+
+<main>
+    <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; padding: 20px;">
+            @if (Model != null && Model.Any())
+            {
+                foreach (var product in Model)
+                {
+                    <div style="border: 1px solid #ddd; border-radius: 5px; padding: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+
+                        <img src="@product.ImageURL"
+                             alt="@product.ProductName"
+                             class="card-img-top"
+                             style="border-radius: 15px; height: auto; width: 100%;" />
+                        <div class="card-body" style="text-align: center;">
+                            <h5 class="card-title" style="font-size: 18px;">@product.ProductName</h5>
+                            <a href="@Url.Action("ProductDetails", "Home", new { productId = product.ProductId })"
+                               class="btn btn-info"
+                               style="border-radius: 15px; background-color: #008080; color: white; font-size: 14px; padding: 5px 10px;">
+                                View Product Details
+                            </a>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p style="text-align: center; color: #ff69b4;">@ViewBag.Message</p>
+            }
+        </div>
+    </div>
+</main>
+
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <a href="@Url.Action("Index", "Home")" class="btn btn-secondary" style="border-radius: 15px; background-color: #008080; color: white; font-size: 14px; padding: 5px 10px;">Back to Home</a>
+</div>
+

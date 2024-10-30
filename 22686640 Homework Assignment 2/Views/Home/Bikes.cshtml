@@ -1,0 +1,88 @@
+﻿<div style="background-color: #ff69b4; padding: 10px; color: white; text-align: center; border-radius: 25px;">
+    <h1>My Bikes Dashboard</h1>
+</div>
+
+<div style="background-color: #fff; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+    
+    <div style="display: flex; margin-top: 10px; flex-wrap: wrap;">
+        <label for="brand" style="margin-right: 10px;">Brand:</label>
+        <select id="brand" style="padding: 5px; border-radius: 15px; border: 1px solid #ccc; margin-right: 20px;">
+            <option value="">All Brands</option>
+            <option value="Brand1">Brand 1</option>
+            <option value="Brand2">Brand 2</option>
+        </select>
+
+        <label for="category" style="margin-right: 10px;">Category:</label>
+        <select id="category" style="padding: 5px; border-radius: 15px; border: 1px solid #ccc; margin-right: 20px;">
+            <option value="">All Categories</option>
+            <option value="Mountain">Mountain</option>
+            <option value="Road">Road</option>
+        </select>
+
+        <label for="condition" style="margin-right: 10px;">Condition:</label>
+        <select id="condition" style="padding: 5px; border-radius: 15px; border: 1px solid #ccc; margin-right: 20px;">
+            <option value="">All Conditions</option>
+            <option value="new">New</option>
+            <option value="used">Used</option>
+        </select>
+
+        <label for="price" style="margin-right: 10px;">Price Difference:</label>
+        <select id="price" style="padding: 5px; border-radius: 15px; border: 1px solid #ccc;">
+            <option value="">Any</option>
+            <option value="500">R500 Difference</option>
+        </select>
+
+        <button style="padding: 10px 15px; border-radius: 15px; color: white; background-color: #008080; border: none; cursor: pointer; margin-left: 20px;">Filter</button>
+    </div>
+</div>
+
+<div style="background-color: #ffcccb; border-radius: 15px; padding: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: #008080;">Bikes You've Bought</h2>
+
+    <div style="display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #ddd; cursor: pointer;">
+        <img src="bike1.jpg" alt="Bike 1" style="width: 100px; height: auto; border-radius: 5px; margin-right: 15px;" />
+        <div style="flex-grow: 1;">
+            <h4 style="color: #008080; margin: 0;">Mountain Bike - BrandX</h4>
+            <p style="margin: 5px 0;">Category: Mountain | Condition: New | Price: R3000</p>
+        </div>
+        <button style="padding: 10px 15px; border-radius: 15px; color: white; background-color: #008080; border: none; cursor: pointer;" onclick="showDetails('bike1')">Details</button>
+    </div>
+</div>
+
+<div style="background-color: #e0f7fa; border-radius: 15px; padding: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+    <h2 style="color: #008080;">Bikes You've Sold</h2>
+
+    <div style="display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #ddd; cursor: pointer;">
+        <img src="bike2.jpg" alt="Bike 2" style="width: 100px; height: auto; border-radius: 5px; margin-right: 15px;" />
+        <div style="flex-grow: 1;">
+            <h4 style="color: #008080; margin: 0;">Road Bike - BrandY</h4>
+            <p style="margin: 5px 0;">Category: Road | Condition: Used | Price: R2500</p>
+        </div>
+        <button style="padding: 10px 15px; border-radius: 15px; color: white; background-color: #008080; border: none; cursor: pointer;" onclick="showDetails('bike2')">Details</button>
+    </div>
+</div>
+
+<div id="bikeDetails" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border-radius: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); z-index: 10;">
+    <h3 style="color: #008080;" id="bikeTitle">Bike Details</h3>
+    <p id="bikeDescription"></p>
+    <button onclick="closeDetails()" style="padding: 10px 15px; border-radius: 15px; color: white; background-color: #ff69b4; border: none; cursor: pointer;">Close</button>
+</div>
+
+<script>
+    function showDetails(bike) {
+        if (bike === 'bike1') {
+            document.getElementById('bikeTitle').innerText = "Mountain Bike - BrandX";
+            document.getElementById('bikeDescription').innerText = "Details about Mountain Bike - BrandX.";
+        } else if (bike === 'bike2') {
+            document.getElementById('bikeTitle').innerText = "Road Bike - BrandY";
+            document.getElementById('bikeDescription').innerText = "Details about Road Bike - BrandY.";
+        }
+
+        document.getElementById('bikeDetails').style.display = 'block';
+    }
+
+    function closeDetails() {
+        document.getElementById('bikeDetails').style.display = 'none';
+    }
+</script>
+

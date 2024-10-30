@@ -1,0 +1,54 @@
+﻿@model _22686640_Homework_Assignment_2.Models.CartViewModel
+@{
+    ViewBag.Title = "Order";
+}
+
+<h2 style="text-align: center; color: #ff69b4; margin-bottom: 30px;">Place Your Order</h2>
+
+<div class="container" style="background-color: #fafafa; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); max-width: 900px; margin: auto;">
+
+    <!-- Cart Section -->
+    <h3 style="color: #008080;">Your Cart</h3>
+    <table class="table table-striped">
+        <thead style="background-color: #ff69b4; color: white;">
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                
+                <th></th> 
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.CartProducts)
+            {
+                <tr>
+                    <td>
+                        <img src="@Url.Content(product.ImageURL)" alt="@product.ProductName" style="width: 80px; height: auto; object-fit: cover; border-radius: 5px; margin-right: 10px;" />
+                        <strong>@product.ProductName</strong><br />
+                    </td>
+                    <td>R @product.ListPrice.ToString("0.00")</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" formaction="@Url.Action("RemoveFromCart", "Home", new { id = product.ProductId })" formmethod="post">Remove</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    
+    @using (Html.BeginForm("SubmitOrder", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div style="text-align: center; margin-top: 20px;">
+            <button type="submit" class="btn btn-block" style="background-color: #008080; color: white; padding: 12px 30px; border-radius: 25px; font-size: 1.2em; border: none; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: background-color 0.3s ease;">
+                Confirm Order
+            </button>
+        </div>
+    }
+</div>
+
+<!-- Back to Shopping Button -->
+<div style="margin-top: 20px; text-align: center;">
+    <a href="@Url.Action("Buy", "Home")" class="btn btn-secondary" style="border-radius: 25px; background-color: #ff69b4; color: white;">Continue Shopping</a>
+</div>
+
+

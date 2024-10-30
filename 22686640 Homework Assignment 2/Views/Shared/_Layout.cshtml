@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm" style="background-color: #ff6da2;">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+            <!-- Brand and Logo Section -->
+            <div class="navbar-brand-container" style="display: flex; align-items: center;">
+                <img src="~/Bike_Images/Electra_Cruiser 1.jpeg" style="height: 60px; width: 60px; margin-left: 10px; margin-right:10px;border-radius: 30%;" />
+                @Html.ActionLink("BICYCLES-HUB", "Index", "Home", new { area = "" }, new { @class = "navbar-brand", style = "color: white; font-size: 1.5em; text-decoration: wavy;" })
+            </div>
+
+            <!-- Toggle Button for Mobile View -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" style="border: none; background-color: #ff69b4;">
+                <span class="navbar-toggler-icon" style="color: white;"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1" style="list-style-type: none; padding-left: 0; display: flex; gap: 20px;">
+                    <li style="display: inline-block;">
+                        @Html.ActionLink("Register", "Registration", "Home", new { area = "" }, new { @class = "nav-link", style = "color: white; text-decoration: none;" })
+                    </li>
+
+                    <!-- Sell Tab -->
+                    <li style="display: inline-block;">
+                        @if (Session["UserEmail"] != null && (Session["UserRole"].ToString() == "Seller" || Session["UserRole"].ToString() == "Buyer" || Session["UserRole"].ToString() == "Both"))
+                        {
+                            @Html.ActionLink("Sell", "Sell", "Home", new { area = "" }, new { @class = "nav-link", style = "color: white; text-decoration: none;" })
+                        }
+                        else
+                        {
+                            <span class="nav-link" style="color: gray; text-decoration: none; pointer-events: none;">Sell</span>
+                        }
+                    </li>
+
+                    <!-- Buy Tab -->
+                    <li style="display: inline-block;">
+                        @if (Session["UserEmail"] != null && (Session["UserRole"].ToString() == "Seller" || Session["UserRole"].ToString() == "Buyer" || Session["UserRole"].ToString() == "Both"))
+                        {
+                            @Html.ActionLink("Buy", "Buy", "Home", new { area = "" }, new { @class = "nav-link", style = "color: white; text-decoration: none;" })
+                        }
+                        else
+                        {
+                            <span class="nav-link" style="color: gray; text-decoration: none; pointer-events: none;">Buy</span>
+                        }
+                    </li>
+
+                    <!-- My Bikes Tab -->
+                    <li style="display: inline-block;">
+                        @if (Session["UserEmail"] != null && (Session["UserRole"].ToString() == "Seller" || Session["UserRole"].ToString() == "Buyer" || Session["UserRole"].ToString() == "Both"))
+                        {
+                            @Html.ActionLink("MyBikes", "Dashboard", "Home", new { area = "" }, new { @class = "nav-link", style = "color: white; text-decoration: none;" })
+                        }
+                        else
+                        {
+                            <span class="nav-link" style="color: gray; text-decoration: none; pointer-events: none;">My Bikes</span>
+                        }
+                    </li>
+
+                    <!-- Login Tab -->
+                    <li style="display: inline-block;">
+                        @if (Session["UserEmail"] == null)
+                        {
+                            @Html.ActionLink("Login", "Login", "Home", new { area = "" }, new { @class = "nav-link", style = "color: white; text-decoration: none;" })
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Logout", "Home")" class="nav-link" style="color: white; text-decoration: none;">Logout</a>
+                        }
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Search Bar -->
+            <div style="margin-bottom: 20px;">
+                <form action="@Url.Action("SearchResults", "Home")" method="get" style="display: flex; align-items: center;">
+                    <input type="search" name="searchTerm" placeholder="Search product" value="@Request.QueryString["searchTerm"]" style="padding: 5px; border: 2px solid #ff69b4; border-radius: 5px;" />
+                    <button type="submit" style="background-color: #ff69b4; color: white; border: none; padding: 5px 10px; margin-left: 5px; border-radius: 5px; cursor: pointer;">
+                        <i class="fa fa-search" style="margin-right: 5px;"></i> Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

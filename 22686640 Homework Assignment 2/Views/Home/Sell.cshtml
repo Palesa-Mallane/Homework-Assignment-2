@@ -1,0 +1,112 @@
+﻿@{
+    ViewBag.Title = "Sell";
+}
+@model List<_22686640_Homework_Assignment_2.Models.ProductViewModel>
+
+<div>
+<div style="background-color: #fafafa; padding: 10px;">
+    
+        <h2 style="text-align: center; color: #ff69b4; margin-bottom: 30px;">Manage Your Bicycles</h2>
+
+        @using (Html.BeginForm("UploadProductForSale", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <label for="ProductName" style="color: #008080; font-weight: bold;">Bicycle Name:</label>
+                    @Html.TextBox("ProductName", null, new { @class = "form-control", style = "border: 1px solid #008080; border-radius: 15px;" })
+                </div>
+                <div class="col-md-4">
+                    <label for="ListPrice" style="color: #008080; font-weight: bold;">Price:</label>
+                    @Html.TextBox("ListPrice", null, new { @class = "form-control", type = "number", step = "0.01", style = "border: 1px solid #008080; border-radius: 15px;" })
+                </div>
+                <div class="col-md-4">
+                    <label for="ModelYear" style="color: #008080; font-weight: bold;">Model Year:</label>
+                    @Html.TextBox("ModelYear", null, new { @class = "form-control", type = "number", style = "border: 1px solid #008080; border-radius: 15px;" })
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <label for="Brands" style="color: #008080; font-weight: bold;">Brands:</label>
+                    @Html.DropDownList("Brand", ViewBag.Brands as SelectList, "Select Brand", new { @class = "form-control", style = "border: 1px solid #008080; border-radius: 15px;" })
+                </div>
+
+                <div class="col-md-4">
+                    <label for="Categories" style="color: #008080; font-weight: bold;">Categories:</label>
+                    @Html.DropDownList("CategoryId", (SelectList)ViewBag.Categories, "Select Category", new { @class = "form-control", style = "border: 1px solid #008080; border-radius: 15px;" })
+                </div>
+                <div class="col-md-4">
+                    <label for="Locations" style="color: #008080; font-weight: bold;">Locations:</label>
+                    @Html.DropDownList("StoreId", (SelectList)ViewBag.Locations, "Select Store+", new { @class = "form-control", style = "border: 1px solid #008080; border-radius: 15px;" })
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <label for="ImageFile" style="color: #008080; font-weight: bold;">Upload Image:</label>
+                    @Html.TextBox("ImageFile", null, new { type = "file", @class = "form-control", style = "border: 1px solid #008080; border-radius: 15px;" })
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-block" style="background-color: #ff69b4; color: white; border: none; border-radius: 15px; padding: 10px 20px; font-size: 16px;">Add Bike</button>
+                </div>
+            </div>
+        }
+
+        <div class="row mb-5">
+            <form action="@Url.Action("SellSearchResults", "Home")" method="get" style="display: flex; align-items: center; width: 100%;">
+                <input type="search" name="searchTerm" placeholder="Search product" value="@Request.QueryString["searchTerm"]" style="padding: 10px; width: 90%; border: 2px solid #ff69b4; border-radius: 15px; margin-right: 10px;" />
+                <button type="submit" style="background-color: #ff69b4; color: white; border: none; padding: 10px 20px; border-radius: 15px; cursor: pointer; font-size: 16px;">
+                    <i class="fa fa-search" style="margin-right: 5px;"></i> Search
+                </button>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered" style="border: 2px solid #008080; border-radius: 15px; overflow: hidden;">
+                    <thead style="background-color: #e0f2f1;">
+                        <tr>
+                            <th style="color: #ff69b4;">Bicycle Name</th>
+                            <th style="color: #ff69b4;">Brand</th>
+                            <th style="color: #ff69b4;">Category</th>
+                            <th style="color: #ff69b4;">Model Year</th>
+                            <th style="color: #ff69b4;">Price</th>
+                            <th style="color: #ff69b4;">Store</th>
+                            <th style="color: #ff69b4;">Image</th>
+                            <th style="color: #ff69b4;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var product in Model)
+                        {
+                            <tr>
+                                <td>@product.ProductName</td>
+                                <td>@product.BrandName</td>
+                                <td>@product.CategoryName</td>
+                                <td>@product.ModelYear</td>
+                                <td>@product.ListPrice</td>
+                                <td>@product.StoreName</td>
+                                <td>
+                                    <img src="@Url.Content(product.ImageURL)" alt="@product.ProductName" style="max-width: 100px; border-radius: 10px;" />
+                                </td>
+                                <td>
+                                    <a href="@Url.Action("ViewSimilarBikes", "Home", new { productId = product.ProductId })" class="btn" style="border-radius: 15px; background-color: #ff69b4; color: white; margin-right: 5px;">View Similar</a>
+                                    <a href="@Url.Action("UpdateProduct", "Home", new { productId = product.ProductId })" class="btn" style="border-radius: 15px; background-color: #008080; color: white; margin-right: 5px;">Update</a>
+                                    <a href="@Url.Action("DeleteProduct", "Home", new { productId = product.ProductId })" class="btn btn-danger" style="border-radius: 15px; background-color: #f44336; color: white;">Delete</a>
+                                </td>
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+    <a href="@Url.Action("Index", "Home")" class="btn" style="background-color: #008080; color: white; border-radius: 15px; padding: 10px 20px;">Back to Home</a>
+</div>
